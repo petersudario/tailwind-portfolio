@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;1,100&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="css/about.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;1,100&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/body.css">
+
   <title>Petersudario</title>
-  
+
   <style>
-    
+
   </style>
 </head>
+
 <body class="bg-black text-white">
+
+  <div class="wrapper">
+    <!-- Suponho que este seja um fundo animado ou algo similar -->
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   <!-- Navbar -->
-  <nav class="bg-black fixed w-full z-50 shadow-lg">
+  <nav class="fixed w-full bg-black z-50 shadow-lg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
         <!-- Logo -->
@@ -34,15 +46,19 @@
         <div class="hidden md:flex md:items-center">
           <ul class="flex space-x-6">
             <li><a href="about.html" class="hover:text-gray-300 transition">About</a></li>
-            <li><a href="https://www.instagram.com/pepo.http/" class="hover:text-gray-300 transition" target="_blank">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/petersudario/" class="hover:text-gray-300 transition" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/pepo.http/" class="hover:text-gray-300 transition"
+                target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/petersudario/" class="hover:text-gray-300 transition"
+                target="_blank">LinkedIn</a></li>
           </ul>
         </div>
         <!-- Mobile Menu Button -->
         <div class="flex items-center md:hidden">
           <button id="menu-btn" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
-            <svg id="menu-icon" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path id="menu-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <svg id="menu-icon" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path id="menu-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
@@ -51,24 +67,32 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="md:hidden hidden bg-black">
       <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <li><a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 transition">About</a></li>
-        <li><a href="https://www.instagram.com/pepo.http/" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 transition" target="_blank">Instagram</a></li>
-        <li><a href="https://www.linkedin.com/in/petersudario/" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 transition" target="_blank">LinkedIn</a></li>
+        <li><a href="about.html"
+            class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 transition">About</a></li>
+        <li><a href="https://www.instagram.com/pepo.http/"
+            class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 transition"
+            target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/petersudario/"
+            class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 transition"
+            target="_blank">LinkedIn</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="pt-20 bg-black min-h-screen flex items-center justify-center">
+  <section class="pt-20 min-h-screen flex items-center justify-center">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center">
         <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Pedro H. Sudario da Silva</h1>
         <h2 class="text-2xl md:text-3xl font-semibold mb-6">Fullstack Developer & QA Tester</h2>
         <blockquote class="text-lg italic mb-6">
-          "You can complain and not find something you wish to find. Or you can grab a coffee and keep searching until you find it (which will inevitably happen). If the worst happens and you don't find it, be the first to create it."
+          "You can complain and not find something you wish to find. Or you can grab a coffee and keep searching until
+          you find it (which will inevitably happen). If the worst happens and you don't find it, be the first to create
+          it."
         </blockquote>
         <p class="text-xl mb-6">I create platforms, apps, and automated tests with Python.</p>
-        <a href="https://github.com/petersudario" target="_blank" class="inline-block bg-white text-black font-bold py-3 px-6 rounded transition hover:bg-gray-300">
+        <a href="https://github.com/petersudario" target="_blank"
+          class="inline-block bg-white text-black font-bold py-3 px-6 rounded transition hover:bg-gray-300">
           View My Projects on GitHub
         </a>
       </div>
@@ -76,35 +100,42 @@
   </section>
 
   <!-- Published Projects Section -->
-  <section class="bg-black py-12">
+  <section class="py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold mb-6 text-center">Published Projects</h2>
       <ul class="space-y-4">
         <li>
-          <a href="https://millarch.org" class="text-xl font-semibold hover:underline transition" target="_blank">Tabloide Digital (2023) - Inuar Technologies</a>
+          <a href="https://millarch.org" class="text-xl font-semibold hover:underline transition"
+            target="_blank">Tabloide Digital (2023) - Inuar Technologies</a>
         </li>
         <li>
-          <a href="https://bit-threads-legacy.vercel.app/" class="text-xl font-semibold hover:underline transition" target="_blank">BitThreads (Social Media)</a>
+          <a href="https://bit-threads-legacy.vercel.app/" class="text-xl font-semibold hover:underline transition"
+            target="_blank">BitThreads (Social Media)</a>
           <p class="ml-4 text-white">- Angular 9 + Firebase</p>
         </li>
         <li>
-          <a href="https://www.youtube.com/watch?v=URuN4a0Cmv8" class="text-xl font-semibold hover:underline transition" target="_blank">PetMania - Platform Showcase</a>
+          <a href="https://www.youtube.com/watch?v=URuN4a0Cmv8" class="text-xl font-semibold hover:underline transition"
+            target="_blank">PetMania - Platform Showcase</a>
           <p class="ml-4 text-white">- Laravel 10 + ReactJS</p>
         </li>
         <li>
-          <a href="https://www.youtube.com/watch?v=UuHO95ymWQc" class="text-xl font-semibold hover:underline transition" target="_blank">Smart Watch - IOT Project Showcase</a>
+          <a href="https://www.youtube.com/watch?v=UuHO95ymWQc" class="text-xl font-semibold hover:underline transition"
+            target="_blank">Smart Watch - IOT Project Showcase</a>
           <p class="ml-4 text-white">- Arduino, Python & MQTT</p>
         </li>
         <li>
-          <a href="https://www.youtube.com/watch?v=URuN4a0Cmv8" class="text-xl font-semibold hover:underline transition" target="_blank">Amalgam - Game Showcase</a>
+          <a href="https://www.youtube.com/watch?v=URuN4a0Cmv8" class="text-xl font-semibold hover:underline transition"
+            target="_blank">Amalgam - Game Showcase</a>
           <p class="ml-4 text-white">- Godot Engine 4</p>
         </li>
         <li>
-          <a href="https://www.youtube.com/watch?v=UuHO95ymWQc" class="text-xl font-semibold hover:underline transition" target="_blank">Sakurada Hospital - Platform Showcase</a>
+          <a href="https://www.youtube.com/watch?v=UuHO95ymWQc" class="text-xl font-semibold hover:underline transition"
+            target="_blank">Sakurada Hospital - Platform Showcase</a>
           <p class="ml-4 text-white">- PHP & MySQL</p>
         </li>
         <li>
-          <a href="https://www.youtube.com/watch?v=YEs_X8hM5VU" class="text-xl font-semibold hover:underline transition" target="_blank">Adventure Time - Browser Fan Game Showcase</a>
+          <a href="https://www.youtube.com/watch?v=YEs_X8hM5VU" class="text-xl font-semibold hover:underline transition"
+            target="_blank">Adventure Time - Browser Fan Game Showcase</a>
           <p class="ml-4 text-white">- HTML, CSS & JavaScript</p>
         </li>
       </ul>
@@ -112,34 +143,43 @@
   </section>
 
   <!-- About Section -->
-  <section class="bg-black py-12">
+  <section class="py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold mb-6 text-center">About</h2>
       <div class="space-y-4 text-white">
         <p>
-          It all started in 2013 when I began tinkering with the code of the game "Minecraft," igniting my passion for programming.
+          It all started in 2013 when I began tinkering with the code of the game "Minecraft," igniting my passion for
+          programming.
         </p>
         <p>
-          In 2020, I delved deeper into programming during my final years of high school, earning a "Computer Technician" certificate in 2022. By 2023, I commenced my "Bachelor in Information Systems" at PUCPR University, Brazil.
+          In 2020, I delved deeper into programming during my final years of high school, earning a "Computer
+          Technician" certificate in 2022. By 2023, I commenced my "Bachelor in Information Systems" at PUCPR
+          University, Brazil.
         </p>
         <p>
-          In 2024, I took on leadership roles such as Founding President of the Information Systems Academic Center and 2nd Secretary of the Central Student Directory at PUCPR. Additionally, I became the General Secretary of the PUCPR Academic Athletic Association of Computing (A.A.A.C - OCTACORE), contributing significantly to student engagement and academic growth.
+          In 2024, I took on leadership roles such as Founding President of the Information Systems Academic Center and
+          2nd Secretary of the Central Student Directory at PUCPR. Additionally, I became the General Secretary of the
+          PUCPR Academic Athletic Association of Computing (A.A.A.C - OCTACORE), contributing significantly to student
+          engagement and academic growth.
         </p>
         <p>
-          Professionally, I have experience as a PHP Intern Developer at Inuar Technology and as a QA Analyst at Sagemcom, where I honed my skills in creating test cases, validating products, and providing customer support.
+          Professionally, I have experience as a PHP Intern Developer at Inuar Technology and as a QA Analyst at
+          Sagemcom, where I honed my skills in creating test cases, validating products, and providing customer support.
         </p>
         <p>
-          Beyond academics and work, I actively engage in personal projects and freelance work to continually refine my skills and embrace new technologies.
+          Beyond academics and work, I actively engage in personal projects and freelance work to continually refine my
+          skills and embrace new technologies.
         </p>
         <p>
-          I have a deep love for classic horror literature, manga comics, sci-fi, mythology books, movies, gaming, and music, which fuels my creativity and problem-solving abilities.
+          I have a deep love for classic horror literature, manga comics, sci-fi, mythology books, movies, gaming, and
+          music, which fuels my creativity and problem-solving abilities.
         </p>
       </div>
     </div>
   </section>
 
   <!-- Timeline Section -->
-  <section class="bg-black py-12">
+  <section class="py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold mb-6 text-center">Timeline</h2>
       <div class="timeline">
@@ -158,7 +198,8 @@
         <div class="timeline-item flex">
           <div class="w-1/4 font-semibold">July, 2023 - Now</div>
           <div>
-            QA Analyst at Sagemcom, creating test cases, test plans, validating products, analyzing bugs, and providing support to the company's customers.<br />
+            QA Analyst at Sagemcom, creating test cases, test plans, validating products, analyzing bugs, and providing
+            support to the company's customers.<br />
             <span class="text-white">- Maintain Python-based library for validation tests.</span>
           </div>
         </div>
@@ -176,14 +217,16 @@
           <div class="w-1/4 font-semibold">January, 2023 - July, 2023</div>
           <div>
             Worked at Inuar Technology as a PHP Intern Developer.<br />
-            <span class="text-white">- Created modules, migrated data, and maintained projects with Symfony-based frameworks, Docker, Linux, and Magento 2.</span>
+            <span class="text-white">- Created modules, migrated data, and maintained projects with Symfony-based
+              frameworks, Docker, Linux, and Magento 2.</span>
           </div>
         </div>
         <div class="timeline-item flex">
           <div class="w-1/4 font-semibold">June, 2022 - Dec, 2022</div>
           <div>
             IT Intern at OPET University.<br />
-            <span class="text-white">- Fixed and dismantled computers, and provided support to teachers and students.</span>
+            <span class="text-white">- Fixed and dismantled computers, and provided support to teachers and
+              students.</span>
           </div>
         </div>
         <div class="timeline-item flex">
@@ -203,7 +246,7 @@
   </section>
 
   <!-- Skills Section -->
-  <section class="bg-black py-12">
+  <section class="py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Soft Skills -->
       <div class="mb-12">
@@ -245,31 +288,37 @@
   </section>
 
   <!-- Goals Section -->
-  <section class="bg-black py-12">
+  <section class="py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-bold mb-6 text-center">My Goals</h2>
       <ol class="list-decimal list-inside space-y-4 text-white">
         <li>
-          <strong>Main Goal:</strong> Join the Apple Developer Academy program at PUCPR to enhance my iOS development skills, network with professionals, and work with Apple's cutting-edge technologies. This has been my aspiration since 2022.
+          <strong>Main Goal:</strong> Join the Apple Developer Academy program at PUCPR to enhance my iOS development
+          skills, network with professionals, and work with Apple's cutting-edge technologies. This has been my
+          aspiration since 2022.
         </li>
         <li>
-          <strong>Dean's List (2024):</strong> Achieve the Dean's List prize at PUCPR by earning over 500 points, a recognition that is internationally valid and valued by many enterprises.
+          <strong>Dean's List (2024):</strong> Achieve the Dean's List prize at PUCPR by earning over 500 points, a
+          recognition that is internationally valid and valued by many enterprises.
         </li>
         <li>
-          <strong>C2 English Certificate:</strong> Attain a C2 English certificate through the PUCPR Idiomas language program to improve my communication skills and fluency with native speakers.
+          <strong>C2 English Certificate:</strong> Attain a C2 English certificate through the PUCPR Idiomas language
+          program to improve my communication skills and fluency with native speakers.
         </li>
         <li>
-          <strong>University Leadership Prize - Ir. Clemente Ivo (2024):</strong> Win this prize for significant academic contributions and leadership that foster the growth and development of PUCPR University.
+          <strong>University Leadership Prize - Ir. Clemente Ivo (2024):</strong> Win this prize for significant
+          academic contributions and leadership that foster the growth and development of PUCPR University.
         </li>
         <li>
-          <strong>Establish a Regular Academic Center:</strong> Transform the academic center into a regular entity under Brazilian law at PUCPR, effectively functioning as a junior enterprise.
+          <strong>Establish a Regular Academic Center:</strong> Transform the academic center into a regular entity
+          under Brazilian law at PUCPR, effectively functioning as a junior enterprise.
         </li>
       </ol>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black py-6">
+  <footer class="py-6">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
       &copy; 2024 Petersudario. All rights reserved.
     </div>
@@ -293,4 +342,5 @@
     });
   </script>
 </body>
+
 </html>
