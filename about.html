@@ -1,402 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;1,100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="css/body.css" />
-    <link rel="stylesheet" type="text/css" href="css/about.css" />
-
-    <title>Petersudario</title>
-  </head>
-  <body>
-    <nav class="bg-black items-center flex justify-between">
-      <div class="text-white text-3xl items-center mx-10">
-        <a href="index.html">Petersudario</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;1,100&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/about.css"/>
+  <title>Petersudario</title>
+  
+  <style>
+    
+  </style>
+</head>
+<body class="bg-black text-white">
+  <!-- Navbar -->
+  <nav class="bg-black fixed w-full z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="text-3xl font-bold text-white">Petersudario</a>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex md:items-center">
+          <ul class="flex space-x-6">
+            <li><a href="about.html" class="hover:text-gray-300 transition">About</a></li>
+            <li><a href="https://www.instagram.com/pepo.http/" class="hover:text-gray-300 transition" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/petersudario/" class="hover:text-gray-300 transition" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center md:hidden">
+          <button id="menu-btn" class="text-gray-300 hover:text-white focus:outline-none focus:text-white">
+            <svg id="menu-icon" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path id="menu-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <ul
-        class="nav-links text-xl text-white flex justify-self-end gap-5 mx-10"
-      >
-        <li><a href="about.html">About</a></li>
-        <li><a href="https://www.instagram.com/pepo.http/">Instagram</a></li>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-black">
+      <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <li><a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 transition">About</a></li>
+        <li><a href="https://www.instagram.com/pepo.http/" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 transition" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/petersudario/" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 transition" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-20 bg-black min-h-screen flex items-center justify-center">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Pedro H. Sudario da Silva</h1>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-6">Fullstack Developer & QA Tester</h2>
+        <blockquote class="text-lg italic mb-6">
+          "You can complain and not find something you wish to find. Or you can grab a coffee and keep searching until you find it (which will inevitably happen). If the worst happens and you don't find it, be the first to create it."
+        </blockquote>
+        <p class="text-xl mb-6">I create platforms, apps, and automated tests with Python.</p>
+        <a href="https://github.com/petersudario" target="_blank" class="inline-block bg-white text-black font-bold py-3 px-6 rounded transition hover:bg-gray-300">
+          View My Projects on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Published Projects Section -->
+  <section class="bg-black py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-6 text-center">Published Projects</h2>
+      <ul class="space-y-4">
         <li>
-          <a href="https://www.linkedin.com/in/petersudario/">LinkedIn</a>
+          <a href="https://millarch.org" class="text-xl font-semibold hover:underline transition" target="_blank">Tabloide Digital (2023) - Inuar Technologies</a>
+        </li>
+        <li>
+          <a href="https://bit-threads-legacy.vercel.app/" class="text-xl font-semibold hover:underline transition" target="_blank">BitThreads (Social Media)</a>
+          <p class="ml-4 text-white">- Angular 9 + Firebase</p>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=URuN4a0Cmv8" class="text-xl font-semibold hover:underline transition" target="_blank">PetMania - Platform Showcase</a>
+          <p class="ml-4 text-white">- Laravel 10 + ReactJS</p>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=UuHO95ymWQc" class="text-xl font-semibold hover:underline transition" target="_blank">Smart Watch - IOT Project Showcase</a>
+          <p class="ml-4 text-white">- Arduino, Python & MQTT</p>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=URuN4a0Cmv8" class="text-xl font-semibold hover:underline transition" target="_blank">Amalgam - Game Showcase</a>
+          <p class="ml-4 text-white">- Godot Engine 4</p>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=UuHO95ymWQc" class="text-xl font-semibold hover:underline transition" target="_blank">Sakurada Hospital - Platform Showcase</a>
+          <p class="ml-4 text-white">- PHP & MySQL</p>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=YEs_X8hM5VU" class="text-xl font-semibold hover:underline transition" target="_blank">Adventure Time - Browser Fan Game Showcase</a>
+          <p class="ml-4 text-white">- HTML, CSS & JavaScript</p>
         </li>
       </ul>
-    </nav>
-
-    <div class="wrapper">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
     </div>
+  </section>
 
-    <main class="grid justify-center items-center w-full">
-      <div class="flex gap-[200px] mb-[40px]">
-        <div class="font-mono flex items-center top-0 sticky">
-          <div class="grid w-[700px] gap-[20px]">
-            <h1 class="text-[70px] font-bold">Pedro H. Sudario da Silva</h1>
-            <h4 class="text-[30px] font-bold">
-              Fullstack Developer & QA Tester
-            </h4>
-            <h4 class="text-[16px] font-bold">
-              "You can complain and not find something you wish to find. Or you
-              can grab a coffee and keep searching until you find it (which will
-              inevitable happen). If the worst happens and you don't find it, be
-              the first to create it."
-            </h4>
+  <!-- About Section -->
+  <section class="bg-black py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-6 text-center">About</h2>
+      <div class="space-y-4 text-white">
+        <p>
+          It all started in 2013 when I began tinkering with the code of the game "Minecraft," igniting my passion for programming.
+        </p>
+        <p>
+          In 2020, I delved deeper into programming during my final years of high school, earning a "Computer Technician" certificate in 2022. By 2023, I commenced my "Bachelor in Information Systems" at PUCPR University, Brazil.
+        </p>
+        <p>
+          In 2024, I took on leadership roles such as Founding President of the Information Systems Academic Center and 2nd Secretary of the Central Student Directory at PUCPR. Additionally, I became the General Secretary of the PUCPR Academic Athletic Association of Computing (A.A.A.C - OCTACORE), contributing significantly to student engagement and academic growth.
+        </p>
+        <p>
+          Professionally, I have experience as a PHP Intern Developer at Inuar Technology and as a QA Analyst at Sagemcom, where I honed my skills in creating test cases, validating products, and providing customer support.
+        </p>
+        <p>
+          Beyond academics and work, I actively engage in personal projects and freelance work to continually refine my skills and embrace new technologies.
+        </p>
+        <p>
+          I have a deep love for classic horror literature, manga comics, sci-fi, mythology books, movies, gaming, and music, which fuels my creativity and problem-solving abilities.
+        </p>
+      </div>
+    </div>
+  </section>
 
-            <p class="text-[25px] text-justify">
-              I create platforms, apps and automated tests with Python
-            </p>
-
-            <div class="grid w-[700px] gap-[20px] m-[30px]">
-              <a href="https://github.com/petersudario"
-                ><h1 class="text-[30px] text-justify font-bold">
-                  Click here to see my project colection on GitHub!
-                </h1></a
-              >
-            </div>
-            <h1 class="text-[30px]">Published projects that I worked on (click to see):</h1>
-            <div
-              class="about-section grid overflow-hidden overflow-y-auto max-h-[300px]"
-            >
-              <div class="grid w-fit gap-[20px]">
-                <ul class="grid text-[25px] text-justify gap-4">
-                  
-                  <li class="project-list text-[25px] text-justify">
-                    <a href="https://millarch.org"
-                      >Tabloide Digital (2023) - Inuar Technologies</a
-                    >
-                  </li>
-
-                  <li class="project-list text-[25px] text-justify">
-                    <a href="https://bit-threads-legacy.vercel.app/"
-                      >BitThreads (Social Media)</a
-                    >
-                    <p class="project-list">- Angular 9 + Firebase</p>
-                  </li>
-
-                  <li class="project-list text-[25px] text-justify">
-                    <a href="https://www.youtube.com/watch?v=URuN4a0Cmv8"
-                      >PetMania - Platform Showcase
-                    </a>
-                    <p class="project-list">- Laravel 10 + ReactJS</p>
-                  </li>
-
-                  <li class="project-list text-[25px] text-justify">
-                    <a href="https://www.youtube.com/watch?v=UuHO95ymWQc"
-                      >Smart Watch - IOT project showcase
-                    </a>
-                    <p class="project-list">- Arduino, Python & MQQT</p>
-                  </li>
-
-                  <li class="project-list text-[25px] text-justify">
-                    <a href="https://www.youtube.com/watch?v=URuN4a0Cmv8"
-                      >Amalgam - Game Showcase
-                    </a>
-                    <p class="project-list">- Godot Engine 4</p>
-                  </li>
-
-                  <li class="project-list text-[25px] text-justify">
-                    <a href="https://www.youtube.com/watch?v=UuHO95ymWQc"
-                      >Sakurada Hospital - Platform Showcase</a
-                    >
-                    <p class="project-list">- PHP & MySQL</p>
-                  </li>
-
-                  <li class="project-list text-[25px] text-justify">
-                    <a href="https://www.youtube.com/watch?v=YEs_X8hM5VU"
-                      >Adventure Time - Browser Fan Game Showcase</a
-                    >
-                    <p class="project-list">- HTML, CSS & JavaScript</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
+  <!-- Timeline Section -->
+  <section class="bg-black py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-6 text-center">Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item flex">
+          <div class="w-1/4 font-semibold">August, 2024 - Now</div>
+          <div>Athletic Academic Association of Computing (A.A.A.C) - OCTACORE - Joined as General Secretary</div>
+        </div>
+        <div class="timeline-item flex">
+          <div class="w-1/4 font-semibold">June, 2024 - Now</div>
+          <div>Central Student Directory - Joined as 2nd Secretary</div>
+        </div>
+        <div class="timeline-item flex">
+          <div class="w-1/4 font-semibold">January, 2024 - Now</div>
+          <div>Founding President of Information Systems Academic Center</div>
+        </div>
+        <div class="timeline-item flex">
+          <div class="w-1/4 font-semibold">July, 2023 - Now</div>
+          <div>
+            QA Analyst at Sagemcom, creating test cases, test plans, validating products, analyzing bugs, and providing support to the company's customers.<br />
+            <span class="text-white">- Maintain Python-based library for validation tests.</span>
           </div>
         </div>
-        <div>
-          <div
-            class="about-section justify-center grid overflow-hidden overflow-y-auto max-h-[700px] mt-[100px]"
-          >
-            <div>
-              <div class="grid w-[700px] gap-[20px] m-[30px]">
-                <h1 class="text-[30px] font-bold">About</h1>
-                <p class="text-[15px] text-justify">
-                  It all started in 2013 when I started to mess the code from
-                  the game called "Minecraft", giving birth to the passion that
-                  I have on programming.
-                </p>
-                <p class="text-[15px] text-justify">
-                  In 2020, I started to learn programming in the last years of
-                  high school (they offered courses along with normal
-                  education), took the "Computer Technician" certificate in 2022
-                  and, in 2023, started to get a degree of "Bachelor in
-                  Information Systems" on PUCPR University, Brazil.<br /><br />
-                  At the start of 2024, I joined as Founding President from the
-                  Information Systems Academic Center at PUCPR, to provide
-                  assistance to students and teachers, and to promote events
-                  around the campus. Near the start of the second semester of
-                  2024, I also joined as the 2nd Secretary of Central Student
-                  Directory in PUCPR, providing assistance to all students from
-                  the Curitiba Campus and other campuses around the state (like
-                  Londrina and Toledo cities). And finally, nearing the end of
-                  2024, I joined as the General Secretary from PUCPR Academic
-                  Athletic Association of Computing (A.A.A.C - OCTACORE),
-                  providing further assistance to the association's board and
-                  members. All of these 3 entities includes a lot of work with
-                  the student body, teachers and the university itself, to
-                  provide a better experience for everyone involved, creating
-                  events, encourage students to participate in academic events
-                  and spread knowledge from their courses, and to provide
-                  assistance to students that are in need of help on their
-                  careers or studies.
-                </p>
-                <p class="text-[15px] text-justify">
-                  Now moving out of the academic path: In 2023, I started to
-                  work at Inuar Technology as a PHP Intern Developer, creating
-                  modules, migrating databases and maintaining projects with
-                  Symfony based frameworks.
-                </p>
-
-                <p class="text-[15px] text-justify">
-                  On mid 2023, I left Inuar Technology and started to work on a
-                  french multinational company called "Sagemcom", as a Intern
-                  Research & Development Support Analyst, creating validation
-                  tests for the company's products.
-                </p>
-                <p class="text-[15px] text-justify">
-                  Jumping to August 2024, I left the Developer's team and moved
-                  to the QA Team in Sagemcom, to provide support as a QA
-                  Analyst, creating test cases, test plans, validate products,
-                  analyze bugs and provide support to company's customers.
-                  Despite the change, I kept evolving the validation libraries
-                  and the test cases that I created in the Developer's team, as
-                  a part-time QA Engineer.
-                </p>
-
-                <p class="text-[15px] text-justify">
-                  Even with all of these events happening, I still have time to
-                  work on personal projects and freelance jobs with friends and
-                  contacts, to keep my skills sharp and to learn new
-                  technologies and methods that I can use in my daily work.
-                </p>
-
-                <p>
-                  I love reading classic horror
-                  <i><b>such as Edgar Allan Poe and H.P Lovecraft</b></i> ,
-                  manga comics, Sci-fi like
-                  <i
-                    ><b
-                      >"Bladerunner - Do Androids Dream of Electric Sheeps?"</b
-                    ></i
-                  >
-                  and mythlogy books like
-                  <i><b>"Norse Mythology from Neil Gaiman".</b></i>
-                </p>
-
-                <p>
-                  I also love movies, like
-                  <b
-                    ><i
-                      >Alien, Guardians of the Galaxy, Star Wars, Oppenheimer,
-                      Interstellar, Dune</i
-                    ></b
-                  >
-                  and superhero movies.
-                </p>
-
-                <p>
-                  And as a hobby, I love playing games and to listen to music.
-                </p>
-              </div>
-              <div class="timeline-container">
-                <h1 class="text-[30px] font-bold">Timeline</h1>
-                <ul class="timeline">
-                  <li class="timeline-item">
-                    <b>August, 2024 - Now</b>
-                    <p>
-                      Athletic Academic Association of Computing (A.A.A.C) -
-                      OCTACORE - Joined as General Secretary
-                    </p>
-                  </li>
-                  <li class="timeline-item">
-                    <b>Jun, 2024 - Now</b>
-                    <p>Central Student Directory - Joined as 2nd Secretary</p>
-                  </li>
-
-                  <li class="timeline-item">
-                    <b>Jan, 2024 - Now</b>
-                    <p>
-                      Founding president of Information Systems Academic Center
-                    </p>
-                  </li>
-                  <li class="timeline-item">
-                    <b>Jul, 2023 - Now</b>
-                    <p>
-                      QA Analyst at Sagemcom, creating test cases, test plans,
-                      validating products, analyzing bugs, and providing support
-                      to the company's customers.
-                    </p>
-                    <p>Maintain Python-based library for validation tests.</p>
-                  </li>
-                  <li class="timeline-item">
-                    <b>Jul, 2023 - Dec, 2023</b><br />
-                    <p>
-                      Class monitor for "Web-development: Front-end" and
-                      "Database Modelling" classes, on PUCPR University.
-                    </p>
-                  </li>
-                  <li class="timeline-item">
-                    <b>Mar, 2023 - Now</b><br />
-                    <p>
-                      Graduating "Bachelor at Information Systems" at PUCPR
-                      University.
-                    </p>
-                  </li>
-                  <li class="timeline-item">
-                    <b>Jan, 2023 - Jul, 2023</b><br />
-                    <p>
-                      Worked at Inuar Technology as a PHP Intern Developer |
-                      Creating modules, migrating data, and maintaining projects
-                      with <b>Symfony</b> based frameworks, Docker, Linux, and
-                      Magento 2.
-                    </p>
-                  </li>
-                  <li class="timeline-item">
-                    <b>Jun, 2022 - Dec, 2022</b><br />
-                    <p>
-                      Worked as IT Intern at OPET University | Fixing and
-                      dismantling computers, and giving support to teachers and
-                      students.
-                    </p>
-                  </li>
-                  <li class="timeline-item">
-                    <b>Jul, 2021 - Aug, 2022</b><br />
-                    <p>
-                      Helped on a front-end project for a delivery website with
-                      2 people | HTML and Bootstrap 5.
-                    </p>
-                  </li>
-                  <li class="timeline-item">
-                    <b>Feb, 2020 - Dec, 2022</b><br />
-                    <p>
-                      IT Technician Certificate + high school completed at
-                      TECPUC College, PUCPR Campus, Brazil.
-                    </p>
-                  </li>
-                </ul>
-                <div class="grid w-[700px] gap-[20px] m-[30px]">
-                  <h1 class="text-[30px] font-bold">
-                    What are my soft skills?
-                  </h1>
-                  <div class="flex gap-[50px] items-center">
-                    <ul class="list-none grid gap-[20px]">
-                      <li>Communication</li>
-                      <li>
-                        Proved C1 English by <br />PUCPR Idiomas language
-                        program
-                      </li>
-                      <li>Critic and analytical</li>
-                      <li>Open-minded</li>
-                    </ul>
-                    <ul class="list-none grid gap-[20px]">
-                      <li>Teamwork</li>
-                      <li>Leadership</li>
-                      <li>Problem-solving</li>
-                      <li>Adaptability</li>
-                    </ul>
-                  </div>
-
-                  <h1 class="text-[30px] font-bold">...and my hard skills?</h1>
-                  <p>
-                    That's a long book actually, but I'll try to resume them.
-                  </p>
-                  <div class="flex gap-[50px] items-center">
-                    <ul class="list-none grid gap-[20px]">
-                      <li>
-                        Front-end development with <br />ReactJS, Angular and
-                        NextJS
-                      </li>
-                      <li>
-                        Back-end development with <br />Laravel, Symfony, NodeJS
-                        and<br />
-                        SpringBoot
-                      </li>
-                      <li>
-                        Mobile development with <br />React Native, Kotlin and
-                        Flutter
-                      </li>
-                    </ul>
-                    <ul class="list-none grid gap-[20px]">
-                      <li>Database modelling & development</li>
-                      <li>
-                        Data Analysis and Testing with <br />Python and OpenCV
-                      </li>
-                      <li>Software Engineering Methods</li>
-                      <li>Linux and Virtual Machines</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="grid w-[700px] gap-[20px] m-[30px]">
-                  <h1 class="text-[30px] font-bold">My Goals</h1>
-                  <ul class="list-none grid gap-[20px]">
-                    <li>
-                      1. Main goal - Join the Apple Developer Academy program at
-                      PUCPR - To improve my skills on iOS development, meet new
-                      people and to be able to work with Apple's technologies.
-                      It's been my goal since 2022 and a dream, after I joined
-                      college.
-                    </li>
-                    <li>
-                      2. Win the Dean's List (2024) prize at PUCPR - Given to
-                      those who achieve more than 500 points. Valid as
-                      international prize, which some enterprises, in certain
-                      cases, only accepts people with recognized prizes.
-                    </li>
-
-                    <li>
-                      3. Achieve a C2 English certificate by PUCPR Idiomas
-                      language program - To improve my communication skills and
-                      to be able to speak fluently with native speakers.
-                    </li>
-
-                    <li>
-                      4. Win the"University Leadership Prize - Ir. Clemente Ivo"
-                      (2024) at PUCPR - Given to those who did a lot of academic
-                      work and helped the university to grow in some way.
-                    </li>
-                    <li>
-                      5. Make the academic center a regular entity at Brazil
-                      law, on PUCPR (basically, a junior enterprise).
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+        <div class="timeline-item flex">
+          <div class="w-1/4 font-semibold">July, 2023 - Dec, 2023</div>
+          <div>
+            Class monitor for "Web-development: Front-end" and "Database Modelling" classes at PUCPR University.
+          </div>
+        </div>
+        <div class="timeline-item flex">
+          <div class="w-1/4 font-semibold">March, 2023 - Now</div>
+          <div>Graduating "Bachelor in Information Systems" at PUCPR University.</div>
+        </div>
+        <div class="timeline-item flex">
+          <div class="w-1/4 font-semibold">January, 2023 - July, 2023</div>
+          <div>
+            Worked at Inuar Technology as a PHP Intern Developer.<br />
+            <span class="text-white">- Created modules, migrated data, and maintained projects with Symfony-based frameworks, Docker, Linux, and Magento 2.</span>
+          </div>
+        </div>
+        <div class="timeline-item flex">
+          <div class="w-1/4 font-semibold">June, 2022 - Dec, 2022</div>
+          <div>
+            IT Intern at OPET University.<br />
+            <span class="text-white">- Fixed and dismantled computers, and provided support to teachers and students.</span>
+          </div>
+        </div>
+        <div class="timeline-item flex">
+          <div class="w-1/4 font-semibold">July, 2021 - Aug, 2022</div>
+          <div>
+            Assisted in a front-end project for a delivery website using HTML and Bootstrap 5 with a team of 2.
+          </div>
+        </div>
+        <div class="timeline-item flex">
+          <div class="w-1/4 font-semibold">Feb, 2020 - Dec, 2022</div>
+          <div>
+            Completed IT Technician Certificate and high school at TECPUC College, PUCPR Campus, Brazil.
           </div>
         </div>
       </div>
-    </main>
-  </body>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="bg-black py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Soft Skills -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold mb-6 text-center">What are my soft skills?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <ul class="space-y-4">
+            <li>Communication</li>
+            <li>Proven C1 English proficiency via PUCPR Idiomas language program</li>
+            <li>Critical and analytical thinking</li>
+            <li>Open-mindedness</li>
+          </ul>
+          <ul class="space-y-4">
+            <li>Teamwork</li>
+            <li>Leadership</li>
+            <li>Problem-solving</li>
+            <li>Adaptability</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Hard Skills -->
+      <div>
+        <h2 class="text-3xl font-bold mb-6 text-center">...and my hard skills?</h2>
+        <p class="mb-6 text-center">Here's a summary of my technical expertise:</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <ul class="space-y-4">
+            <li>Front-end development with ReactJS, Angular, and NextJS</li>
+            <li>Back-end development with Laravel, Symfony, NodeJS, and SpringBoot</li>
+            <li>Mobile development with React Native, Kotlin, and Flutter</li>
+          </ul>
+          <ul class="space-y-4">
+            <li>Database modeling & development</li>
+            <li>Data Analysis and Testing with Python and OpenCV</li>
+            <li>Software Engineering Methods</li>
+            <li>Linux and Virtual Machines</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals Section -->
+  <section class="bg-black py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-6 text-center">My Goals</h2>
+      <ol class="list-decimal list-inside space-y-4 text-white">
+        <li>
+          <strong>Main Goal:</strong> Join the Apple Developer Academy program at PUCPR to enhance my iOS development skills, network with professionals, and work with Apple's cutting-edge technologies. This has been my aspiration since 2022.
+        </li>
+        <li>
+          <strong>Dean's List (2024):</strong> Achieve the Dean's List prize at PUCPR by earning over 500 points, a recognition that is internationally valid and valued by many enterprises.
+        </li>
+        <li>
+          <strong>C2 English Certificate:</strong> Attain a C2 English certificate through the PUCPR Idiomas language program to improve my communication skills and fluency with native speakers.
+        </li>
+        <li>
+          <strong>University Leadership Prize - Ir. Clemente Ivo (2024):</strong> Win this prize for significant academic contributions and leadership that foster the growth and development of PUCPR University.
+        </li>
+        <li>
+          <strong>Establish a Regular Academic Center:</strong> Transform the academic center into a regular entity under Brazilian law at PUCPR, effectively functioning as a junior enterprise.
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      &copy; 2024 Petersudario. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const menuPath = document.getElementById('menu-path');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      // Toggle between hamburger and close icon
+      if (mobileMenu.classList.contains('hidden')) {
+        menuPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16'); // Hamburger
+      } else {
+        menuPath.setAttribute('d', 'M6 18L18 6M6 6l12 12'); // Close
+      }
+    });
+  </script>
+</body>
 </html>
